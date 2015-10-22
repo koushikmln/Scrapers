@@ -1,0 +1,20 @@
+SD_KEY	SD_URL	kpid	productName	productColor	productModel	productModelID	productPrice
+922060485	http://www.snapdeal.com/product/samsung-galaxy-s-duos-2/922060485	mobile_1	Samsung Galaxy S Duos 2 GT-S7582 (White)	(White)	NA	NA	8885
+116878426	http://www.snapdeal.com/product/samsung-galaxy-grand-2-black/116878426	mobile_2	Samsung Galaxy Grand 2 Black	Black	NA	NA	18999
+430796	http://www.snapdeal.com/product/samsung-galaxy-s-duos-s7562/430796	mobile_3	Samsung Galaxy S Duos S7562 White	White	NA	NA	7500
+1301413077	http://www.snapdeal.com/product/samsung-galaxy-grand-neo-gti9060/1301413077	mobile_4	Samsung Galaxy Grand Neo GT-I9060	GT-I9060	NA	NA	14995
+900056133	http://www.snapdeal.com/product/samsung-galaxy-core-gti8262-white/900056133	mobile_5	Samsung Galaxy Core GT-I8262 (White)	(White)	NA	NA	11884
+864683341	http://www.snapdeal.com/product/nokia-x-dual-sim-red/864683341	mobile_6	Nokia X Dual SIM Red	16 M	NA	NA	6709
+1351153	http://www.snapdeal.com/product/samsung-galaxy-s4-gti9500-white/1351153	mobile_7	Samsung Galaxy S4 GT-I9500 White	White	NA	NA	29024
+264616795	http://www.snapdeal.com/product/samsung-galaxy-trend-s7392-black/264616795	mobile_8	Samsung Galaxy Trend S7392 (Black)	(Black)	NA	NA	6700
+247389602	http://www.snapdeal.com/product/samsung-galaxy-star-pro-white/247389602	mobile_9	Samsung Galaxy Star Pro (White)	(White)	NA	NA	5527
+922485437	http://www.snapdeal.com/product/samsung-galaxy-s5-shimmery-white/922485437	mobile_10	Samsung Galaxy S5 Shimmery White	White	NA	NA	37989
+127355	http://www.snapdeal.com/product/samsung-galaxy-s3-i9300-marble/127355	mobile_11	Samsung Galaxy S3 -I9300 (Marble White)	White)	NA	NA	20299
+1071671327	http://www.snapdeal.com/product/sony-xperia-c-black/1071671327	mobile_12	Sony Xperia C Black	Black	NA	NA	16040
+1379409	http://www.snapdeal.com/product/micromax-canvas-doodle-a111/1379409	mobile_13	Micromax Canvas DOODLE A111	A111	NA	NA	9352
+1354506	http://www.snapdeal.com/product/samsung-galaxy-grand-quattro-white/1354506	mobile_14	Samsung Galaxy Grand Quattro White	White	NA	NA	13494
+1709863424	http://www.snapdeal.com/product/micromax-canvas-4-a210-white/1709863424	mobile_15	Micromax Canvas 4 A210 White	White	NA	NA	20160
+1929194710	http://www.snapdeal.com/product/micromax-canvas-doodle-3-a102/1929194710 	mobile_16	Micromax Canvas Doodle 3 A102 Blue	Blue	NA	NA	7964
+347830397	http://www.snapdeal.com/product/apple-iphone-5s-16-gb/347830397	mobile_17	Apple iPhone 5S 16 GB (Silver)	(Silver)	NA	NA	47460
+1406309564	http://www.snapdeal.com/product/samsung-galaxy-grand-duos-i9082/1406309564	mobile_18	Samsung Galaxy Grand Duos I9082 With Two Flip Cover	Cover	NA	NA	17599
+871379975	http://www.snapdeal.com/product/sony-xperia-m-dual-black/871379975	mobile_19	Sony Xperia M Dual Black	Black	NA	NA	11499

@@ -1,0 +1,36 @@
+{
+	"name": "KAMPAYER",
+	"version": "1.0",
+	"manifest_version": 2,
+	"icons" : {
+		"16":"icons/Logo.png",
+		"48":"icons/Logo.png",
+		"128":"icons/Logo.png"
+	},
+	
+	"background": {
+		"scripts": ["background.js","jquery.js","bootstrap.min.js"],
+		"css":["default.css","bootstrap.min.css","bootstrap-theme.min.css"],
+		"persistent": false
+	},
+	
+	"browser_action": {
+		"default_icon": "icons/Logo.png",
+		"default_popup": "browseraction/popup.html"
+	},
+	
+	"permissions": [ "tabs","http://*/*"],
+	
+	"content_scripts":[
+		{
+		"matches": ["http://*/*"],
+		"js":["jquery.js","bootstrap.min.js"]
+		}
+	],
+	
+	"content_scripts": [
+		{	"matches":["*://www.flipkart.com/*?pid=*","*://www.flipkart.com/*&pid=*","*://www.amazon.in/*/dp/*","*://www.amazon.in/gp/*","*://www.amazon.in/dp/*","*://www.jabong.com/*-*.html"],
+		"js": ["content.js","jquery.js","bootstrap.min.js"]
+		}
+	]
+}

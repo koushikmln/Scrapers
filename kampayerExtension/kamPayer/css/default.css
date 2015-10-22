@@ -1,0 +1,70 @@
+/* General Blueprint Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-family: 'bpicons';
+	src:url('../fonts/bpicons/bpicons.eot');
+	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bpicons/bpicons.woff') format('woff'),
+		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
+		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+	font-family: 'manus';
+	src:url('../fonts/manus/MNS_TRIAL.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+} /* Made with http://icomoon.io/ */
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+}
+
+a {
+	color: #f0f0f0;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.kampayer{
+    background: -webkit-linear-gradient(top, #88d600, #30a700);
+	width: 100%;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left:0;
+}
+
+.shopsmart{
+	padding:0.01em;
+	margin-left: 10%;
+	float:left;
+	font-family: 'manus';
+	color: #000;
+	font-size: 1.5em;
+	margin-right: 0.2em;
+}
+.productstore{
+	float:left;
+	padding:0.5em;
+    font-family: 'rupee';
+	src:url('../fonts/rupee/Rupee_Foradian.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'rupee';
+	color: #000;
+	font-size: 1.3em;
+	margin-right:1em;
+}

@@ -1,0 +1,85 @@
+CREATE TABLE KP_Products(
+kpid VARCHAR(100) NOT NULL,
+mspid VARCHAR(100) NOT NULL,
+mspname VARCHAR(100) NOT NULL,
+mspURL VARCHAR(500) NOT NULL,
+PRIMARY KEY ( kpid )
+);
+
+
+CREATE TABLE AMZ_KP_DESC_mapping(
+AMZ_KEY VARCHAR(100) NOT NULL,
+AMZ_URL VARCHAR(500) NOT NULL,
+kpid VARCHAR(100) NOT NULL,
+productName VARCHAR(100) NOT NULL,
+productColor VARCHAR(100) NOT NULL,
+productModel VARCHAR(100) NOT NULL,
+productModelID VARCHAR(100) NOT NULL,
+productPrice VARCHAR(100) NOT NULL,
+PRIMARY KEY ( AMZ_KEY )
+);
+
+
+CREATE TABLE FK_KP_DESC_mapping(
+FK_KEY VARCHAR(100) NOT NULL,
+FK_URL VARCHAR(500) NOT NULL,
+kpid VARCHAR(100) NOT NULL,
+productName VARCHAR(100) NOT NULL,
+productColor VARCHAR(100) NOT NULL,
+productModel VARCHAR(100) NOT NULL,
+productModelID VARCHAR(100) NOT NULL,
+productPrice VARCHAR(100) NOT NULL,
+PRIMARY KEY ( FK_KEY )
+);
+
+
+CREATE TABLE HS18_KP_DESC_mapping(
+HS18_KEY VARCHAR(100) NOT NULL,
+HS18_URL VARCHAR(500) NOT NULL,
+kpid VARCHAR(100) NOT NULL,
+productName VARCHAR(100) NOT NULL,
+productColor VARCHAR(100) NOT NULL,
+productModel VARCHAR(100) NOT NULL,
+productModelID VARCHAR(100) NOT NULL,
+productPrice VARCHAR(100) NOT NULL,
+PRIMARY KEY ( HS18_KEY )
+);
+
+
+CREATE TABLE IN_KP_DESC_mapping(
+IN_KEY VARCHAR(500) NOT NULL,
+IN_URL VARCHAR(500) NOT NULL,
+kpid VARCHAR(100) NOT NULL,
+productName VARCHAR(100) NOT NULL,
+productColor VARCHAR(100) NOT NULL,
+productModel VARCHAR(100) NOT NULL,
+productModelID VARCHAR(100) NOT NULL,
+productPrice VARCHAR(100) NOT NULL,
+PRIMARY KEY ( IN_KEY )
+);
+
+
+CREATE TABLE SD_KP_DESC_mapping(
+SD_KEY VARCHAR(100) NOT NULL,
+SD_URL VARCHAR(500) NOT NULL,
+kpid VARCHAR(100) NOT NULL,
+productName VARCHAR(100) NOT NULL,
+productColor VARCHAR(100) NOT NULL,
+productModel VARCHAR(100) NOT NULL,
+productModelID VARCHAR(100) NOT NULL,
+productPrice VARCHAR(100) NOT NULL,
+PRIMARY KEY ( SD_KEY )
+);
+
+
+SET @@group_concat_max_len = 9999999;
+
+
+CREATE TABLE PRICE_mapping(
+KPID VARCHAR(100) NOT NULL,
+SOURCE_URL_NAME_COLOR_PRICE TEXT NOT NULL,
+PRIMARY KEY ( KPID )
+);
+
+
+insert into PRICE_mapping select kpid, group_concat(product_attrb separator '||') from (select * from (select kpid, concat('SD', '|', SD_URL, '|', productName, '|', productColor, '|', productPrice) as product_attrb from SD_KP_DESC_mapping)t1 UNION select * from (select kpid, concat('FK', '|', FK_URL, '|', productName, '|', productColor, '|', productPrice) as product_attrb from FK_KP_DESC_mapping)t2 UNION select * from (select kpid, concat('AMZ', '|', AMZ_URL, '|', productName, '|', productColor, '|', productPrice) as product_attrb from AMZ_KP_DESC_mapping)t3 UNION select * from (select kpid, concat('HS18', '|', HS18_URL, '|', productName, '|', productColor, '|', productPrice) as product_attrb from HS18_KP_DESC_mapping)t4 UNION select * from (select kpid, concat('IN', '|', IN_URL, '|', productName, '|', productColor, '|', productPrice) as product_attrb from IN_KP_DESC_mapping)t5)t6 group by kpid;
